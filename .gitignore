@@ -7,7 +7,6 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-build/
 
 # Xcode
 #
@@ -37,3 +36,4 @@ android/build/
 .gradle
 local.properties
 *.iml
+.history
