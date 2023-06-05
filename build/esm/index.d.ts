@@ -1,7 +1,7 @@
 /**
  * Type alias for possible biometry types
  */
-export declare type BiometryType = "TouchID" | "FaceID" | "Biometrics";
+export declare type BiometryType = 'TouchID' | 'FaceID' | 'Biometrics';
 interface IsSensorAvailableResult {
     available: boolean;
     biometryType?: BiometryType;

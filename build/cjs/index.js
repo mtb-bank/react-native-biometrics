@@ -7,15 +7,15 @@ var ReactNativeBiometrics;
     /**
      * Enum for touch id sensor type
      */
-    ReactNativeBiometrics.TouchID = "TouchID";
+    ReactNativeBiometrics.TouchID = 'TouchID';
     /**
      * Enum for face id sensor type
      */
-    ReactNativeBiometrics.FaceID = "FaceID";
+    ReactNativeBiometrics.FaceID = 'FaceID';
     /**
      * Enum for generic biometrics (this is the only value available on android)
      */
-    ReactNativeBiometrics.Biometrics = "Biometrics";
+    ReactNativeBiometrics.Biometrics = 'Biometrics';
     /**
      * Returns promise that resolves to an object with object.biometryType = Biometrics | TouchID | FaceID
      * @returns {Promise<Object>} Promise that resolves to an object with details about biometrics available
@@ -72,7 +72,7 @@ var ReactNativeBiometrics;
      */
     function createSignature(createSignatureOptions) {
         if (!createSignatureOptions.cancelButtonText) {
-            createSignatureOptions.cancelButtonText = "Cancel";
+            createSignatureOptions.cancelButtonText = 'Cancel';
         }
         return bridge.createSignature(createSignatureOptions);
     }
@@ -88,7 +88,7 @@ var ReactNativeBiometrics;
      */
     function simplePrompt(simplePromptOptions) {
         if (!simplePromptOptions.cancelButtonText) {
-            simplePromptOptions.cancelButtonText = "Cancel";
+            simplePromptOptions.cancelButtonText = 'Cancel';
         }
         return bridge.simplePrompt(simplePromptOptions);
     }
