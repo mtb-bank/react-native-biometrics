@@ -24,7 +24,7 @@
     "touch-id",
     "face-id"
   ],
-  "homepage": "https://github.com/SelfLender/react-native-biometrics",
+  "homepage": "https://github.com/mtb-bank/react-native-biometrics",
   "contributors": [],
   "private": false,
   "author": {
@@ -36,7 +36,7 @@
     "react-native": ">=0.60.0"
   },
   "bugs": {
-    "url": "https://github.com/SelfLender/react-native-biometrics/issues"
+    "url": "https://github.com/mtb-bank/react-native-biometrics/issues"
   },
   "devDependencies": {
     "typescript": "^3.7.2"
