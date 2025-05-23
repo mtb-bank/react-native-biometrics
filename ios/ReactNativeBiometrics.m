@@ -221,8 +221,9 @@ RCT_EXPORT_METHOD(biometricKeysExist: (RCTPromiseResolveBlock)resolve rejecter:(
       resolve(result);
     }
   });
-  
-  RCT_EXPORT_METHOD(biometricKeysExistAndSignatureValid: (RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+}
+
+RCT_EXPORT_METHOD(biometricKeysExistAndSignatureValid: (RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
   dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     BOOL biometricKeyExists = [self doesBiometricKeyExist];
 
@@ -238,7 +239,6 @@ RCT_EXPORT_METHOD(biometricKeysExist: (RCTPromiseResolveBlock)resolve rejecter:(
       resolve(result);
     }
   });
-}
 }
 
 - (NSData *) getBiometricKeyTag {
